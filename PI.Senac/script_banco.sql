@@ -10,7 +10,7 @@ CREATE TABLE PessoaFisica (
     cpf VARCHAR(14) UNIQUE NOT NULL
 );
 
--- Tabela Aluno (Herança de Pessoa Física)
+-- Tabela Aluno 
 CREATE TABLE Aluno (
     id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     ra INT UNIQUE NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE PessoaJuridica (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
--- Inserção de Teste (Exatamente o que aparece no teu print)
+-- Inserção de Teste 
 INSERT INTO PessoaFisica (nome, cpf) VALUES ('Victor Araujo Correa', '395.055.268-57');
 INSERT INTO Aluno (ra, matricula, curso, fk_pf) VALUES (2025001, 1010, 'Análise e Desenvolvimento de Sistemas', 1);
 
